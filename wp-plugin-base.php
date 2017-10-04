@@ -19,9 +19,9 @@ if( file_exists( WP_PLUGIN_BASE_DIR . 'vendor/autoload_52.php' ) ) {
 	require( WP_PLUGIN_BASE_DIR . 'vendor/autoload_52.php' );
 }
 
-if( class_exists( 'WP_Plugin_Base' )  ) {
+if( class_exists( 'WP_Plugin_Factory' )  ) {
 	function wp_plugin_base() {
-		return WP_Plugin_Base::get_instance();
+		return WP_Plugin_Factory::create();
 	}
 
 	add_action( 'plugins_loaded', 'wp_plugin_base' );

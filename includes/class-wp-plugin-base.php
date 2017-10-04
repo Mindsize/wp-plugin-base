@@ -10,21 +10,12 @@
  * @copyright Copyright (c) 2017 Mindsize <info@mindsize.me>
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 class WP_Plugin_Base {
-
-	protected static $single_instance = null;
-
-	/**
-	 * Get a single instance of the plugin.
-	 */
-	public static function get_instance() {
-		if( null === self::$single_instance ) {
-			self::$single_instance = new self();
-		}
-
-		return self::$single_instance;
-	}
-
 	/**
 	 * Constructor.
 	 */
