@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 if( ! class_exists( 'WP_CLI_Command' ) ) {
 	return;
 }

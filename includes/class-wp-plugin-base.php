@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * WP Plugin Base main class file.
  *
@@ -10,11 +14,6 @@
  * @copyright Copyright (c) 2017 Mindsize <info@mindsize.me>
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0
  */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
 class WP_Plugin_Base {
 	/**
 	 * Constructor.

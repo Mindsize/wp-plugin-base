@@ -1,4 +1,9 @@
 <?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * Plugin Name:       WordPress Plugin Base
  * Description:       This is a sample plugin that was created with mindsize/wp-plugin-base
