@@ -1,4 +1,5 @@
 <?php
+namespace Mindsize\Plugin_Base;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

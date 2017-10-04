@@ -1,4 +1,7 @@
 <?php
+namespace Mindsize\Plugin_Base;
+use WP_CLI_Command;
+use WP_CLI;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

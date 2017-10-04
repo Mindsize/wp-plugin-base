@@ -1,4 +1,6 @@
 <?php
+namespace Mindsize\Plugin_Base;
+use WP_CLI;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -21,7 +23,7 @@ class WP_Plugin_Base {
 	public function __construct() {
 		// Register the CLI command if we're running WP_CLI
 		if( defined( 'WP_CLI' ) && WP_CLI ) {
-			WP_CLI::add_command( 'wp-plugin-base', 'WP_Plugin_Base_CLI' );
+			WP_CLI::add_command( 'wp-plugin-base', __NAMESPACE__ . '\\WP_Plugin_Base_CLI' );
 		}
 	}
 }
