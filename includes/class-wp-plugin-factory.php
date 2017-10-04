@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin factory, so we get one shared instance of the class that's not a singleton.
  */
