@@ -1,4 +1,10 @@
 <?php
+namespace Mindsize\Plugin_Base;
+use WP_CLI;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 /**
  * WP Plugin Base main class file.
@@ -11,27 +17,13 @@
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0
  */
 class WP_Plugin_Base {
-
-	protected static $single_instance = null;
-
-	/**
-	 * Get a single instance of the plugin.
-	 */
-	public static function get_instance() {
-		if( null === self::$single_instance ) {
-			self::$single_instance = new self();
-		}
-
-		return self::$single_instance;
-	}
-
 	/**
 	 * Constructor.
 	 */
 	public function __construct() {
 		// Register the CLI command if we're running WP_CLI
 		if( defined( 'WP_CLI' ) && WP_CLI ) {
-			WP_CLI::add_command( 'wp-plugin-base', 'WP_Plugin_Base_CLI' );
+			WP_CLI::add_command( 'wp-plugin-base', __NAMESPACE__ . '\\WP_Plugin_Base_CLI' );
 		}
 	}
 }
