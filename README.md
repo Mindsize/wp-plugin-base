@@ -2,9 +2,21 @@
 
 A great way to spin up new WP plugins with composer.
 
-## How to create a plugin from this base:
+## About this plugin base
 
-### Create the Plugin from Composer
+### Included Packages
+
+| Need | Solution |
+| :---: | :--- |
+| Template Loader | `gamajo/template-loader` |
+
+### Recomended Packages
+
+| Need | Solution |
+| :---: | :--- |
+| CPT/Taxonomy Registration | `johnbillion/extended-cpts`|
+
+### How to create your plugin from this base with Composer
 
 From the terminal just run the following command.
 
@@ -37,15 +49,3 @@ After cloning this repository, run `composer install` in the root directory of t
 ### From Packaged Releases on WordPress.org
 
 Packaged releases on WordPress.org will automatically include the required autoloaders.
-
-## Included Packages
-
-| Need | Solution |
-| :---: | :--- |
-| Template Loader | `gamajo/template-loader` |
-
-## Recomended Packages
-
-| Need | Solution |
-| :---: | :--- |
-| CPT/Taxonomy Registration | `johnbillion/extended-cpts`|

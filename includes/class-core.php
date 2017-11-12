@@ -14,13 +14,27 @@ use WP_CLI;
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0
  */
 class Core {
+
+	/**
+	 * Container for template loader instance.
+	 */
+	protected $template_loader;
+
 	/**
 	 * Constructor.
 	 */
 	public function init() {
-		// Register the CLI command if we're running WP_CLI
 		if( defined( 'WP_CLI' ) && WP_CLI ) {
 			WP_CLI::add_command( WP_PLUGIN_BASE_SLUG, __NAMESPACE__ . '\\CLI' );
 		}
+
+		$this->template_loader = new Template_loader();
+	}
+
+	/**
+	 * Template loader
+	 */
+	public function template_loader() {
+		return $this->template_loader;
 	}
 }
