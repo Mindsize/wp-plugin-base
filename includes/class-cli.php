@@ -1,11 +1,8 @@
 <?php
-namespace Mindsize\Plugin_Base;
+namespace Mindsize\WP_Plugin_Base;
+
 use WP_CLI_Command;
 use WP_CLI;
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
 
 if( ! class_exists( 'WP_CLI_Command' ) ) {
 	return;
@@ -28,7 +25,7 @@ if( ! class_exists( 'WP_CLI_Command' ) ) {
  *     $ wp wp-plugin-base ping
  *     pong
  */
-class WP_Plugin_Base_CLI extends WP_CLI_Command {
+class CLI extends WP_CLI_Command {
 
 	public function ping() {
 		WP_CLI::line( 'pong' );

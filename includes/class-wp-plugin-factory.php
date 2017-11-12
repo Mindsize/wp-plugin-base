@@ -1,9 +1,5 @@
 <?php
-namespace Mindsize\Plugin_Base;
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+namespace Mindsize\WP_Plugin_Base;
 
 /**
  * Plugin factory, so we get one shared instance of the class that's not a singleton.
@@ -18,7 +14,7 @@ class WP_Plugin_Factory {
 		static $plugin = null;
 
 		if ( null === $plugin ) {
-			$plugin = new WP_Plugin_Base();
+			$plugin = new Core();
 		}
 
 		return $plugin;
