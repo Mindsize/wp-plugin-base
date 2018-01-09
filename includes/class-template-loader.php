@@ -9,7 +9,7 @@ namespace Mindsize\WP_Plugin_Base;
  * @copyright Copyright (c) 2017 Mindsize <info@mindsize.me>
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0
  */
-class Template_Loader extends Gamajo_Template_Loader {
+class Template_Loader extends MS_WPPB_Gamajo_Template_Loader {
 
 	/**
 	 * Prefix for filter names.
