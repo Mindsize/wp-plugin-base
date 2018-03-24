@@ -28,7 +28,7 @@ class Core {
 			WP_CLI::add_command( WP_PLUGIN_BASE_SLUG, __NAMESPACE__ . '\\CLI' );
 		}
 
-		$this->template_loader = new Template_loader();
+		$this->template_loader = new Template_Loader();
 	}
 
 	/**

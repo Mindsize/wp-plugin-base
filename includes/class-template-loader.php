@@ -1,6 +1,8 @@
 <?php
 namespace Mindsize\WP_Plugin_Base;
 
+use Gamajo_Template_Loader;
+
 /**
  * Template loader which allows for WordPress template files that can even be overridden from the theme.
  *
