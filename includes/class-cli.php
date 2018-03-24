@@ -4,7 +4,7 @@ namespace Mindsize\WP_Plugin_Base;
 use WP_CLI_Command;
 use WP_CLI;
 
-if( ! class_exists( 'WP_CLI_Command' ) ) {
+if ( ! class_exists( 'WP_CLI_Command' ) ) {
 	return;
 }
 

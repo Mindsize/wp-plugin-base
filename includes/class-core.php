@@ -24,7 +24,7 @@ class Core {
 	 * Constructor.
 	 */
 	public function init() {
-		if( defined( 'WP_CLI' ) && WP_CLI ) {
+		if ( defined( 'WP_CLI' ) && WP_CLI ) {
 			WP_CLI::add_command( WP_PLUGIN_BASE_SLUG, __NAMESPACE__ . '\\CLI' );
 		}
 
