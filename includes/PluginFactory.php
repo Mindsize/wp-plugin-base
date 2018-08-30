@@ -1,5 +1,5 @@
 <?php
-namespace Mindsize\HerpADerp;
+namespace Mindsize\WP_Plugin_Base;
 
 /**
  * Plugin factory, so we get one shared instance of the class that's not a singleton.

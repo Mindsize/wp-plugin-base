@@ -9,7 +9,7 @@
  * Tested up to:      4.8
  */
 
-namespace Mindsize\HerpADerp;
+namespace Mindsize\WP_Plugin_Base;
 
 require_once 'vendor/autoload.php';
 require_once 'bootstrap.php';

@@ -1,5 +1,5 @@
 <?php
-namespace Mindsize\HerpADerp;
+namespace Mindsize\WP_Plugin_Base;
 
 define('WP_PLUGIN_BASE_VERSION', '1.0.0');
 define('WP_PLUGIN_BASE_SLUG', 'wp-plugin-base');
