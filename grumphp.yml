@@ -1,0 +1,6 @@
+parameters:
+  hide_circumvention_tip: true
+  ignore_unstaged_changes: true
+  tasks:
+    phpcs:
+      standard: "PSR2"
