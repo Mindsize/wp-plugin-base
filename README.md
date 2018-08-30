@@ -28,7 +28,7 @@ composer create-project mindsize/wp-plugin-base my-new-plugin
 
 | Find | Replace | Why |
 | :---: | :---: | :--- |
-| `Mindsize\WP_Plugin_Base` | `Mindsize\Your_Plugin` | Update the plugin namespace. |
+| `Mindsize\HerpADerp` | `Mindsize\Your_Plugin` | Update the plugin namespace. |
 | `WP_PLUGIN_BASE_` | `YOUR_PLUGIN_` | Update the plugin constants. |
 | `wp_plugin_base` | `your_plugin` | Update the plugin wrapper function. |
 

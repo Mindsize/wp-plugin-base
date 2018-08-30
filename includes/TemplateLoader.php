@@ -1,5 +1,5 @@
 <?php
-namespace Mindsize\WP_Plugin_Base\App;
+namespace Mindsize\HerpADerp;
 
 use Gamajo_Template_Loader;
 

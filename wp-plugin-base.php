@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       WordPress Plugin Base
- * Description:       This is a sample plugin that was created with mindsize/wp-plugin-base
+ * Plugin Name:       AAAA Test 888
+ * Description:       Herp a Derp
  * Author:            Mindsize
  * Author URI:        http://mindsize.me
  * Version:           1.0.0
@@ -9,9 +9,9 @@
  * Tested up to:      4.8
  */
 
-namespace Mindsize\WP_Plugin_Base;
+namespace Mindsize\HerpADerp;
 
-require_once 'vendor/autoloader.php';
+require_once 'vendor/autoload.php';
 require_once 'bootstrap.php';
 
 add_action('plugins_loaded', __NAMESPACE__ . '\\load_plugin');

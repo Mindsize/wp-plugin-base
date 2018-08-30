@@ -1,5 +1,5 @@
 <?php
-namespace Mindsize\WP_Plugin_Base\App;
+namespace Mindsize\HerpADerp;
 
 use WP_CLI;
 
