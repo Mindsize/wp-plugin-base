@@ -3,4 +3,4 @@ parameters:
   ignore_unstaged_changes: true
   tasks:
     phpcs:
-      standard: "PSR2"
+      standard: null
