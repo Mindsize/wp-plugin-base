@@ -1,2 +1,6 @@
 /vendor
-composer.lock
+/composer.lock
+/*.sublime-project
+/*.sublime-workspace
+/.phpcs.xml
+/phpcs.xml

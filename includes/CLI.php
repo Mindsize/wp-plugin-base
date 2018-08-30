@@ -4,10 +4,6 @@ namespace Mindsize\WP_Plugin_Base;
 use WP_CLI_Command;
 use WP_CLI;
 
-if ( ! class_exists( 'WP_CLI_Command' ) ) {
-	return;
-}
-
 /**
  * CLI access to the sample plugin.
  *
@@ -25,10 +21,10 @@ if ( ! class_exists( 'WP_CLI_Command' ) ) {
  *     $ wp wp-plugin-base ping
  *     pong
  */
-class CLI extends WP_CLI_Command {
-
-	public function ping() {
-		WP_CLI::line( 'pong' );
-	}
-
+class CLI extends WP_CLI_Command
+{
+    public function ping()
+    {
+        WP_CLI::line('pong');
+    }
 }

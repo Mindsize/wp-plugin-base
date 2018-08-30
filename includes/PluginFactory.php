@@ -9,14 +9,16 @@ namespace Mindsize\WP_Plugin_Base;
  * @copyright Copyright (c) 2017 Mindsize <info@mindsize.me>
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0
  */
-class WP_Plugin_Factory {
-	public static function create() {
-		static $plugin = null;
+class PluginFactory
+{
+    public static function create()
+    {
+        static $plugin = null;
 
-		if ( null === $plugin ) {
-			$plugin = new Core();
-		}
+        if (null === $plugin) {
+            $plugin = new Core();
+        }
 
-		return $plugin;
-	}
+        return $plugin;
+    }
 }
