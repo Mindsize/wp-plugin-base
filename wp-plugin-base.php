@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       AAAA Test 888
- * Description:       Herp a Derp
+ * Plugin Name:       WP Plugin Base
+ * Description:       Base plugin on which a composerised modern plugin can be implemented.
  * Author:            Mindsize
  * Author URI:        http://mindsize.me
  * Version:           1.0.0
