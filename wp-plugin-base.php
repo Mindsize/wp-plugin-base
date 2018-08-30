@@ -11,6 +11,7 @@
 
 namespace Mindsize\WP_Plugin_Base;
 
+require_once 'vendor/autoloader.php';
 require_once 'bootstrap.php';
 
 add_action('plugins_loaded', __NAMESPACE__ . '\\load_plugin');

@@ -9,7 +9,7 @@ define('WP_PLUGIN_BASE_URL', plugin_dir_url(WP_PLUGIN_BASE_FILE));
 
 function wp_plugin_base()
 {
-    return WP_Plugin_Factory::create();
+    return App/PluginFactory::create();
 }
 
 function load_plugin()
