@@ -1,4 +1,10 @@
 <?php
+/**
+ * Main plugin class file.
+ *
+ * @package Mindsize\WP_Plugin_Base
+ */
+
 namespace Mindsize\WP_Plugin_Base;
 
 use WP_CLI;
@@ -17,6 +23,8 @@ class Core {
 
 	/**
 	 * Container for template loader instance.
+	 *
+	 * @var $template_loader Will hold an instance of Template_Loader.
 	 */
 	protected $template_loader;
 
@@ -33,6 +41,8 @@ class Core {
 
 	/**
 	 * Template loader
+	 *
+	 * @return Template_Loader
 	 */
 	public function template_loader() {
 		return $this->template_loader;
