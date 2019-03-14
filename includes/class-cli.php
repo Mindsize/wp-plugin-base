@@ -1,4 +1,10 @@
 <?php
+/**
+ * File that declares CLI access to the plugin.
+ *
+ * @package Mindsize\WP_Plugin_Base
+ */
+
 namespace Mindsize\WP_Plugin_Base;
 
 use WP_CLI_Command;
@@ -26,7 +32,11 @@ if ( ! class_exists( 'WP_CLI_Command' ) ) {
  *     pong
  */
 class CLI extends WP_CLI_Command {
-
+	/**
+	 * Example WPCLI method that responds to a command.
+	 *
+	 * @return void
+	 */
 	public function ping() {
 		WP_CLI::line( 'pong' );
 	}

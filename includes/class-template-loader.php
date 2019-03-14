@@ -1,4 +1,10 @@
 <?php
+/**
+ * File that holds the template loader class.
+ *
+ * @package Mindsize\WP_Plugin_Base
+ */
+
 namespace Mindsize\WP_Plugin_Base;
 
 use Gamajo_Template_Loader;
